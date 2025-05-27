@@ -1,0 +1,64 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f2f9f1;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #a3d977;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+main {
+  padding: 2em;
+}
+.visual-block {
+  background: #fff;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.bar-chart {
+  height: 30px;
+  background: #ddd;
+  border-radius: 5px;
+  margin: 1em 0;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  transition: width 0.5s ease-in-out;
+}
+input[type="range"] {
+  width: 100%;
+}
+#co2Circle {
+  margin-top: 1em;
+  width: 100px;
+  height: 100px;
+  background-color: #88c0d0;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.5s ease;
+}
+.sun {
+  font-size: 64px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.sun:hover {
+  transform: scale(1.2);
+}
+.result-text {
+  margin-top: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #336633;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>永續屏東：互動資料藝術</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌱 永續屏東：視覺化減碳行動</h1>
+    <p>以資料驅動藝術方式呈現 2023 年屏東縣的永續成果</p>
+  </header>
+
+  <main>
+    <!-- ☀️ 模組 A -->
+    <section class="visual-block">
+      <h2>☀️ 點擊太陽，啟動綠能</h2>
+      <div id="sun" class="sun">☀️</div>
+      <div class="bar-chart"><div id="solarBar" class="bar-fill"></div></div>
+      <p>太陽能併網進度：<span id="solarPercent">0</span>%</p>
+    </section>
+
+    <!-- 🌿 模組 B -->
+    <section class="visual-block">
+      <h2>🌿 農業永續轉盤</h2>
+      <button id="spinBtn">🎡 點我探索一項永續農業成果</button>
+      <p id="agriResult" class="result-text"></p>
+    </section>
+
+    <!-- 🧪 模組 C -->
+    <section class="visual-block">
+      <h2>🧪 模擬 PM2.5 空氣品質</h2>
+      <input type="range" id="pmSlider" min="0" max="100" value="20">
+      <p>PM2.5 數值：<span id="pmValue">20</span> μg/m³</p>
+    </section>
+
+    <!-- 💧 模組 D -->
+    <section class="visual-block">
+      <h2>💧 濕地復育資訊</h2>
+      <select id="wetlandSelect">
+        <option selected disabled>請選擇濕地</option>
+        <option>黃金濕地</option>
+        <option>海豐濕地</option>
+        <option>龍頸溪</option>
+      </select>
+      <p id="wetlandData" class="result-text"></p>
+    </section>
+
+    <!-- 🌏 模組 E -->
+    <section class="visual-block">
+      <h2>🌏 溫室氣體減量模擬</h2>
+      <input type="range" id="co2Slider" min="0" max="100" value="50">
+      <p>目前碳排放減量進度：<span id="co2Output">50</span>%</p>
+      <div class="circle" id="co2Circle"></div>
+    </section>
+  </main>
+
+  <footer style="text-align:center; padding:2em; background:#eee;">
+    <p>資料來源：屏東縣政府環境保護局（2023）</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
